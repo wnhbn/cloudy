@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/brand.svg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mark.js/dist/mark.min.js"></script>
+    <script src="/js/main.js"></script>
+    <meta property="og:title" content="Cloudy is an incredibly powerful, real-time messaging application" />
+    <meta property="og:description" content="Cloudy was built under the artistic hands of Khanh Nguyen" />
+    <meta property="og:image" content="https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg" />
+    {{#if isAuthPage}}
+    {{else}}
+    <title>Cloudy</title>
+    <link href="/assets/css/template.min.css" rel="stylesheet">
+    {{/if}}
+</head>
+
+<body>
+    <div>
+        {{> header}}
+
+        {{{body}}}
+
+        {{> footer}}
+    </div>
+    {{#if isAuthPage}}
+    {{else}}
+    <!-- Scripts -->
+    <script src="/assets/js/libs/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/plugins/plugins.bundle.js"></script>
+    <script src="/assets/js/template.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <!-- Scripts -->
+    {{/if}}
+</body>
+
+</html>
