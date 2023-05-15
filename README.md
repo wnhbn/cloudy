@@ -37,7 +37,3 @@ MAILER_HOST=
 MAILER_PORT=
 
 ```
-
-## Stay in touch
-
-Facebook - [Khanh Nguyen](https://www.facebook.com/KWalkerNNK)
